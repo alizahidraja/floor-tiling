@@ -75,8 +75,10 @@ class FloorPlan:
         ax = fig.add_subplot(111, aspect='equal')
         
         y = 0
+        line = 1
         for i in self.tiling_plan:
-            st.write(i)
+            st.write(line, i)
+            line += 1
         
         self.tiling_plan.reverse()
         for i in self.tiling_plan:
